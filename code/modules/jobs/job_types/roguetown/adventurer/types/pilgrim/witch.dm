@@ -30,7 +30,7 @@
 						/obj/item/chalk = 1
 						)
 	if(H.mind)
-		H.mind.AddSpell(new /obj/effect/proc_holder/spell/targeted/shapeshift/crow)
+		H.mind.AddSpell(new /obj/effect/proc_holder/spell/targeted/shapeshift/witchcrow)
 		H.mind.AddSpell(new /obj/effect/proc_holder/spell/targeted/touch/prestidigitation)
 		H.mind.AddSpell(new /obj/effect/proc_holder/spell/invoked/guidance)
 		H.mind.AddSpell(new /obj/effect/proc_holder/spell/invoked/projectile/arcynebolt)
