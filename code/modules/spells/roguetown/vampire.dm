@@ -32,7 +32,7 @@
 /obj/effect/proc_holder/spell/targeted/shapeshift/witchcrow
 	name = "Zad Form"
 	overlay_state = "zad"
-	desc = ""
+	desc = "For witches"
 	invocation = ""
 	gesture_required = TRUE
 	chargetime = 5 SECONDS
