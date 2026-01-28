@@ -45,7 +45,7 @@
 	else if(istype(obj, /mob/living/carbon/human/species/human/northern/thief))
 		to_chat(user, span_warning("I cannot raise this body, need else"))
 		return FALSE
-	else if(istype(onj, /mob/living/carbon/human/species/skeleton/npc))
+	else if(istype(obj, /mob/living/carbon/human/species/skeleton/npc))
 		to_chat(user, span_warning("I cannot raise this body, need else"))
 		return FALSE
 	var/mob/living/carbon/human/target = obj
