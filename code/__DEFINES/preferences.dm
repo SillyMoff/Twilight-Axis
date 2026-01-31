@@ -54,8 +54,10 @@
 #define CHAT_BANKCARD		(1<<10)
 #define CHAT_ADMINLOOC		(1<<11)
 #define CHAT_ADMINSPAWN		(1<<12)
+#define CHAT_MOODMESSAGES	(1<<13)
 
-#define TOGGLES_DEFAULT_CHAT (CHAT_OOC|CHAT_PRAYER|CHAT_RADIO|CHAT_PULLR|CHAT_GHOSTPDA|CHAT_BANKCARD)
+#define TOGGLES_DEFAULT_CHAT (CHAT_OOC|CHAT_PRAYER|CHAT_RADIO|CHAT_PULLR|CHAT_GHOSTPDA|CHAT_BANKCARD|CHAT_MOODMESSAGES)
+
 #define TOGGLES_DEFAULT_CHAT_ADMIN (CHAT_ADMINSPAWN|CHAT_ADMINLOOC)
 
 #define PARALLAX_INSANE -1 //for show offs
@@ -150,3 +152,27 @@ GLOBAL_LIST_INIT(pronouns_list, list(HE_HIM, SHE_HER, THEY_THEM, THEY_THEM_F, IT
 #define VOICE_TYPE_ANDR	"Androgynous"
 
 GLOBAL_LIST_INIT(voice_types_list, list(VOICE_TYPE_MASC, VOICE_TYPE_FEM, VOICE_TYPE_ANDR))
+
+#define VOICE_PACK_DEFAULT	"Default"
+#define VOICE_PACK_MASC	"Masculine"
+#define VOICE_PACK_MASC_ELF "Elvish (Masc)"
+#define VOICE_PACK_MASC_DWARF "Dwarvish (Masc)"
+#define VOICE_PACK_FOP	"Foppish (Masc)"
+#define VOICE_PACK_KNIGHT "Knightly (Masc)"
+#define VOICE_PACK_WARRIOR "Warrior (Masc)"
+#define VOICE_PACK_FEM	"Feminine"
+#define VOICE_PACK_FEM_DAINTY "Dainty (Fem)"
+#define VOICE_PACK_FEM_HAUGHTY "Haughty (Fem)"
+#define VOICE_PACK_FEM_ELF	"Elvish (Fem)"
+#define VOICE_PACK_FEM_DWARF "Dwarvish (Fem)"
+
+GLOBAL_LIST_INIT(voice_packs_list, list(
+	VOICE_PACK_DEFAULT = null,
+	VOICE_PACK_MASC = /datum/voicepack/male,
+	VOICE_PACK_FOP = /datum/voicepack/male/foppish,
+	VOICE_PACK_KNIGHT = /datum/voicepack/male/knight,
+	VOICE_PACK_WARRIOR = /datum/voicepack/male/warrior,
+	VOICE_PACK_FEM = /datum/voicepack/female,
+	VOICE_PACK_FEM_DAINTY = /datum/voicepack/female/dainty,
+	VOICE_PACK_FEM_HAUGHTY = /datum/voicepack/female/haughty,
+))
