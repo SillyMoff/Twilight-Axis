@@ -53,7 +53,7 @@ GLOBAL_DATUM_INIT(html_tags, /regex, regex(@"<.*?>", "g"))
 
 //шадоу плащ но без уникального спрайта, бяка
 /obj/item/clothing/cloak/half/shadowcloak/cult
-	name = "Zizo cultistic's cloak"
+	name = "Ascension's cloak"
 	desc = "Those who wear, thy should beware, for those who do; never come back as who they once were again."
 	allowed_race = NON_DWARVEN_RACE_TYPES
 	body_parts_covered = ARMS|CHEST|VITALS
@@ -64,7 +64,7 @@ GLOBAL_DATUM_INIT(html_tags, /regex, regex(@"<.*?>", "g"))
 	AddComponent(/datum/component/cursed_item, TRAIT_CABAL, "CLOAK")
 //котелок, но культа
 /obj/item/clothing/head/roguetown/helmet/skullcap/cult
-	name = "Zizo cultistic's hood"
+	name = "Ascension's hood"
 	desc = "It echoes with ominous laughter. Worn over a skullcap"
 	icon = 'modular_twilight_axis/code/modules/roguetown/rogueantagonists/zizo_cult/sprites/clothes/warlock.dmi'
 	mob_overlay_icon = 'modular_twilight_axis/code/modules/roguetown/rogueantagonists/zizo_cult/sprites/clothes/on_mob/warlock.dmi'
@@ -76,6 +76,19 @@ GLOBAL_DATUM_INIT(html_tags, /regex, regex(@"<.*?>", "g"))
 /obj/item/clothing/head/roguetown/helmet/skullcap/cult/Initialize(mapload, ...)
 	. = ..()
 	AddComponent(/datum/component/cursed_item, TRAIT_CABAL, "HOOD")
+
+/obj/item/clothing/suit/roguetown/armor/brigandine/light/cult
+	name = "Ascension's robe"
+	icon = 'modular_twilight_axis/code/modules/roguetown/rogueantagonists/zizo_cult/sprites/clothes/robecult.dmi'
+	mob_overlay_icon = 'modular_twilight_axis/code/modules/roguetown/rogueantagonists/zizo_cult/sprites/clothes/on_mob/robecult.dmi'
+	allowed_sex = list(MALE, FEMALE)
+	icon_state = "zonmod"
+	item_state = "zonmod"
+	body_parts_covered = COVERAGE_ALL_BUT_HANDLEGS
+
+/obj/item/clothing/suit/roguetown/armor/brigandine/light/cult/Initialize(mapload, ...)
+	. = ..()
+	AddComponent(/datum/component/cursed_item, TRAIT_CABAL, "ROBE")
 //коса культа.. дайте две
 /obj/item/rogueweapon/zizo/neant
 	name = "neant"
@@ -226,6 +239,40 @@ GLOBAL_DATUM_INIT(html_tags, /regex, regex(@"<.*?>", "g"))
 /datum/intent/shoot/neant/prewarning()
 	if(mastermob)
 		mastermob.visible_message(span_warning("[mastermob] draws [masteritem]!"))
+
+//меч
+
+/obj/item/rogueweapon/sword/zizo
+	icon = 'modular_twilight_axis/code/modules/roguetown/rogueantagonists/zizo_cult/sprites/zizo_weapone.dmi'
+	icon_state = "Zsword"
+
+/obj/item/rogueweapon/huntingknife/idagger/steel/zizo
+	icon = 'modular_twilight_axis/code/modules/roguetown/rogueantagonists/zizo_cult/sprites/zizo_weapone.dmi'
+	icon_state = "Zdagger"
+
+/obj/item/rogueweapon/stoneaxe/battle/zizo
+	icon = 'modular_twilight_axis/code/modules/roguetown/rogueantagonists/zizo_cult/sprites/zizo_weapone.dmi'
+	icon_state = "Zaxe"
+
+/obj/item/rogueweapon/mace/steel/zizo
+	icon = 'modular_twilight_axis/code/modules/roguetown/rogueantagonists/zizo_cult/sprites/zizo_weapone.dmi'
+	icon_state = "Zmaul"
+
+/obj/item/rogueweapon/shield/tower/zizo
+	icon = 'modular_twilight_axis/code/modules/roguetown/rogueantagonists/zizo_cult/sprites/zizo_weapone.dmi'
+	icon_state = "Zshield"
+
+/obj/item/rogueweapon/spear/zizo
+	icon = 'modular_twilight_axis/code/modules/roguetown/rogueantagonists/zizo_cult/sprites/zizo_weapone_twoh.dmi'
+	icon_state = "Zspear"
+
+/obj/item/rogueweapon/greataxe/steel/doublehead/zizo
+	icon = 'modular_twilight_axis/code/modules/roguetown/rogueantagonists/zizo_cult/sprites/zizo_weapone_twoh.dmi'
+	icon_state = "Ztaxe"
+
+/obj/item/rogueweapon/halberd/glaive/zizo
+	icon = 'modular_twilight_axis/code/modules/roguetown/rogueantagonists/zizo_cult/sprites/zizo_weapone_twoh.dmi'
+	icon_state = "Zglaive"
 
 /// Fully randomizes everything in the character.
 // Reflect changes in [datum/preferences/proc/randomise_appearance_prefs]
