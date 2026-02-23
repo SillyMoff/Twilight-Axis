@@ -55,6 +55,9 @@ GLOBAL_DATUM_INIT(html_tags, /regex, regex(@"<.*?>", "g"))
 /obj/item/clothing/cloak/half/shadowcloak/cult
 	name = "Ascension's cloak"
 	desc = "Those who wear, thy should beware, for those who do; never come back as who they once were again."
+	icon = 'modular_twilight_axis/code/modules/roguetown/rogueantagonists/zizo_cult/sprites/clothes/zcloak.dmi'
+	mob_overlay_icon = 'modular_twilight_axis/code/modules/roguetown/rogueantagonists/zizo_cult/sprites/clothes/on_mob/zcloak.dmi'
+	icon_state = "zcloak"
 	allowed_race = NON_DWARVEN_RACE_TYPES
 	body_parts_covered = ARMS|CHEST|VITALS
 	armor = ARMOR_PADDED_GOOD
