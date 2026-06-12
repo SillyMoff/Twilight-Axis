@@ -443,23 +443,53 @@
 	return FALSE
 
 /obj/item/clothing/ring/TAgriefflower
-	name = "rosa ring"
-	desc = "Once a flower of love, now touched by Baotha's hand. Its petals whisper of desire, despair, and the kind of longing that never dies. Worn by those who cannot let go."
+	name = "flower ring"
+	desc = "A ring, which made by rosa buds."
 	icon_state = "peaceflower"
 	item_state = "peaceflower"
 	icon = 'icons/roguetown/items/produce.dmi'
 	mob_overlay_icon = 'icons/roguetown/clothing/onmob/head_items.dmi'
 
+/obj/item/clothing/ring/TAgriefflower/examine(var/mob/living/carbon/human/user)
+	. = ..()
+	if(iscarbon(user))
+		if(user.patron.type == /datum/patron/inhumen/baotha)
+			. += ("Once a flower of love, now touched by Baotha's hand. Its petals whisper of desire, despair, and the kind of longing that never dies. Worn by those who cannot let go.")
+		if(user.patron.type == /datum/patron/divine/eora)
+			. += ("I can feel a strange energy from this ring... This is definitely not a ring created by just rosa buds. The energy of Baotha is felt from this ring.")
+
 /obj/item/clothing/ring/TAgriefflower/equipped(mob/living/carbon/human/user, slot)
 	. = ..()
-	if(slot == SLOT_RING)
-		user.apply_status_effect(/datum/status_effect/buff/griefflower)
+	if(slot == SLOT_RING && user.patron?.type != /datum/patron/inhumen/baotha)
+		user.apply_status_effect(/datum/status_effect/buff/griefflowerta)
+		user.blood_volume = max(user.blood_volume-40, 0)
+		user.adjustBruteLoss(20)
+		to_chat(user, span_warning("AGH!... This flowers is hurting.. Ogh, i put it on carelessly and got hurt!"))
+	else if(slot == SLOT_RING && user.patron?.type == /datum/patron/inhumen/baotha)
+		user.apply_status_effect(/datum/status_effect/buff/griefflowerta/buff)
+		to_chat(user, span_notice("I follower of Baotha! Ring is accept me and wanst hurt me.."))
 
 /obj/item/clothing/ring/TAgriefflower/dropped(mob/living/carbon/human/user)
 	. = ..()
 	if(istype(user) && user?.wear_ring == src)
-		user.remove_status_effect(/datum/status_effect/buff/griefflower)
+		user.remove_status_effect(/datum/status_effect/buff/griefflowerta)
 
+/datum/status_effect/buff/griefflowerta
+	id = "griefflower"
+
+/datum/status_effect/buff/griefflowerta/on_apply()
+	. = ..()
+	to_chat(owner, span_notice("The rosa’s flower ring draws blood from your finger, but you start feelings more pleasant."))
+	ADD_TRAIT(owner, TRAIT_CRACKHEAD, src)
+
+/datum/status_effect/buff/griefflowerta/on_remove()
+	. = ..()
+	to_chat(owner, span_notice("You part from the rosa-flower ring. The pleasant retreats..."))
+	REMOVE_TRAIT(owner, TRAIT_CRACKHEAD, src)
+
+/datum/status_effect/buff/griefflowerta/buff
+	effectedstats = list(STATKEY_CON = 1,STATKEY_WIL = 1)
+	alert_type = /atom/movable/screen/alert/status_effect/buff/griefflower
 // Insufflation - effectively just drugging yourself. Lets you pick, the same as Enrapturing Powder. T1, for now, to make up for the loss of the Baotha Blessing buff.
 
 /obj/effect/proc_holder/spell/self/TAinsufflation 
