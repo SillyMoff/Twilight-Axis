@@ -452,11 +452,12 @@
 
 /obj/item/clothing/ring/TAgriefflower/examine(var/mob/living/carbon/human/user)
 	. = ..()
-	if(iscarbon(user))
-		if(user.patron.type == /datum/patron/inhumen/baotha)
-			. += ("Once a flower of love, now touched by Baotha's hand. Its petals whisper of desire, despair, and the kind of longing that never dies. Worn by those who cannot let go.")
-		if(user.patron.type == /datum/patron/divine/eora)
-			. += ("I can feel a strange energy from this ring... This is definitely not a ring created by just rosa buds. The energy of Baotha is felt from this ring.")
+	if(!iscarbon(user) || !user.patron)
+		return
+	if(user.patron.type == /datum/patron/inhumen/baotha)
+		. += ("Once a flower of love, now touched by Baotha's hand. Its petals whisper of desire, despair, and the kind of longing that never dies. Worn by those who cannot let go.")
+	if(user.patron.type == /datum/patron/divine/eora)
+		. += ("I can feel a strange energy from this ring... This is definitely not a ring created by just rosa buds. The energy of Baotha is felt from this ring.")
 
 /obj/item/clothing/ring/TAgriefflower/equipped(mob/living/carbon/human/user, slot)
 	. = ..()
