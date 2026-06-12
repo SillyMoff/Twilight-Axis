@@ -479,12 +479,10 @@
 
 /datum/status_effect/buff/griefflowerta/on_apply()
 	. = ..()
-	to_chat(owner, span_notice("The rosa’s flower ring draws blood from your finger, but you start feelings more pleasant."))
 	ADD_TRAIT(owner, TRAIT_CRACKHEAD, src)
 
 /datum/status_effect/buff/griefflowerta/on_remove()
 	. = ..()
-	to_chat(owner, span_notice("You part from the rosa-flower ring. The pleasant retreats..."))
 	REMOVE_TRAIT(owner, TRAIT_CRACKHEAD, src)
 
 /datum/status_effect/buff/griefflowerta/buff
