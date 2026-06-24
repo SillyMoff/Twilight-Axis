@@ -134,7 +134,7 @@
 	smelt_bar_num = 2
 	body_parts_covered = COVERAGE_ALL_BUT_HANDLEGS
 
-#define ARMOR_BAOTHA_LIGHT list("blunt" = DR_SUPER, "slash" = DBLOCK_MEDIUM, "stab" = DBLOCK_MEDIUM, "piercing" = DBLOCK_BSTEEL, "fire" = DR_MEDIUM, "acid" = DR_NONE, "bullet" = DR_LIGHT)  //TA EDIT
+#define ARMOR_BAOTHA_LIGHT list("blunt" = DR_SUPER, "slash" = DBLOCK_MEDIUM, "stab" = DBLOCK_MEDIUM, "piercing" = DBLOCK_BSTEEL, "fire" = DR_MEDIUM, "acid" = DR_NONE, "bullet" = DR_HEAVY)  //TA EDIT
 
 /obj/item/clothing/head/roguetown/helmet/baotha_ta
 	name = "saccharine sallet"
@@ -187,7 +187,7 @@
 	armor_class = ARMOR_CLASS_LIGHT //The big, big thing.
 	color = null
 	chunkcolor = "#dd2166"
-	body_parts_covered = COVERAGE_ALL_BUT_ARMFEET
+	body_parts_covered = COVERAGE_ALL_BUT_HANDFEET
 	smeltresult = /obj/item/ingot/component/baotha
 
 /obj/item/clothing/suit/roguetown/armor/plate/fluted/baotha_ta/Initialize()
