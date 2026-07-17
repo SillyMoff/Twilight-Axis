@@ -203,7 +203,7 @@
 	allowed_seeds["Репа"] = /obj/item/seeds/turnip
 	allowed_seeds["Огурец"] = /obj/item/seeds/cucumber
 	allowed_seeds["Кабачок"] = /obj/item/seeds/eggplant
-	allowed_seeds["Огурец"] = /obj/item/seeds/carrot
+	allowed_seeds["Морковь"] = /obj/item/seeds/carrot
 	allowed_seeds["Лук"] = /obj/item/seeds/onion
 	allowed_seeds["Чеснок"] = /obj/item/seeds/garlick
 	allowed_seeds["Овес"] = /obj/item/seeds/wheat/oat
