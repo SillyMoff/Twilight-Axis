@@ -47,7 +47,7 @@
 
 /datum/intent/claw/lunge/iron/dendor
 	name = "Укол зверя"
-	desc = "Укол звериными когтями, пробивающие доспехи насквозь."
+	desc = "Укол звериными когтями, пробивающий доспехи насквозь."
 // - - -
 
 /obj/item/rogueweapon/beast_claws
