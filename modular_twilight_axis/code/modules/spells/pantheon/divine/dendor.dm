@@ -149,15 +149,13 @@
 
 /datum/status_effect/buff/beast_rage/on_apply()
 	. = ..()
-	ADD_TRAIT(owner, TRAIT_CRITICAL_RESISTANCE, TRAIT_GENERIC)
-	ADD_TRAIT(owner, TRAIT_NOPAINSTUN, TRAIT_GENERIC)
+	ADD_TRAIT(owner, TRAIT_BLOOD_RESISTANCE, TRAIT_GENERIC)
 
 /datum/status_effect/buff/beast_rage/on_remove()
 	. = ..()
 	owner.apply_status_effect(/datum/status_effect/debuff/beast_rage_weakness)
 	owner.clear_fullscreen("beast_mode")
-	REMOVE_TRAIT(owner, TRAIT_CRITICAL_RESISTANCE, TRAIT_GENERIC)
-	REMOVE_TRAIT(owner, TRAIT_NOPAINSTUN, TRAIT_GENERIC)
+	REMOVE_TRAIT(owner, TRAIT_BLOOD_RESISTANCE, TRAIT_GENERIC)
 // -- Spell
 
 /obj/effect/proc_holder/spell/self/beast_rage
@@ -184,7 +182,7 @@
 	range = -1
 	overlay_state = "blesscrop"
 	releasedrain = 30
-	recharge_time = 10 MINUTES
+	recharge_time = 15 MINUTES
 	req_items = /obj/item/clothing/neck/roguetown/psicross/dendor
 	cast_without_targets = TRUE
 	sound = 'sound/magic/churn.ogg'
