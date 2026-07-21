@@ -17,7 +17,7 @@
 
 		STASTR = 14
 		STACON = 14
-		STAWIL = 14
+		STAWIL = 13
 		STAPER = 8
 		STASPD = 6
 		STAINT = 8
