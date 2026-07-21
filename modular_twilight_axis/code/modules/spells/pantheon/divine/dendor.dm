@@ -221,7 +221,6 @@
 	allowed_seeds["Ягодный куст (клубника)"] = /obj/item/seeds/strawberry
 	allowed_seeds["Ягодный куст (черника)"] = /obj/item/seeds/blackberry
 	allowed_seeds["Ягодный куст (малина)"] = /obj/item/seeds/raspberry
-	allowed_seeds["Мак"] = /obj/item/seeds/poppy
 	return allowed_seeds
 
 /obj/effect/proc_holder/spell/targeted/create_seed/cast(list/targets, mob/user = usr)
