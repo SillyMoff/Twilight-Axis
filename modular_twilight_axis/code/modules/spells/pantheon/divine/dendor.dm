@@ -247,7 +247,12 @@
 /mob/living/carbon/human/species/wildshape/bear/gain_inherent_skills()
 	. = ..()
 	if(mind)
+		STASTR = 14
+		STACON = 14
 		STAWIL = 14
+		STAPER = 8
+		STASPD = 6
+		STAINT = 8
 
 /obj/item/rogueweapon/bear_claw
 	force = 28
