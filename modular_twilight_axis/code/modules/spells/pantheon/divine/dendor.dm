@@ -245,7 +245,6 @@
 //хуйня для зверей
 
 /obj/item/rogueweapon/bear_claw
-	force = 28
 	possible_item_intents = list(/datum/intent/simple/bear, /datum/intent/claw/lunge/iron, /datum/intent/mace/strike, /datum/intent/mace/smash)
 
 /mob/living/carbon/human/species/wildshape/bear/gain_inherent_skills()
