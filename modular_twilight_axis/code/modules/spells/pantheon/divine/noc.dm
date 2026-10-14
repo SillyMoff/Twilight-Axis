@@ -12,7 +12,8 @@
 	button_icon = 'icons/mob/actions/mage_augmentation.dmi'
 	button_icon_state = "darkvision"
 	desc = "Дарует вам и людям вокруг ночное зрение."
-	invocation_type = "Нок направляет мой взор."
+	invocations = list("Нок направляет мой взор.")
+	invocation_type = INVOCATION_WHISPER
 
 //////////////////////////////
 // T1 - Hiden Rune. //
@@ -421,7 +422,7 @@
 /datum/action/cooldown/spell/noc/TAmoonlight
 	name = "Лунный свет"
 	desc = "Луна поглощает весь свет и замедляет окружающих в определенном радиусе, эффект зависит от уровня чудес. \
-		Низшие существа вокруг вас потеряют возможность двигаться."
+		Низшие существа вокруг вас парализуются."
 	button_icon_state = "moon_light"
 	sound = 'sound/magic/churn.ogg'
 	glow_intensity = GLOW_INTENSITY_LOW
@@ -434,7 +435,7 @@
 
 	secondary_resource_cost = SPELLCOST_MIRACLE
 
-	invocation_type = INVOCATION_SHOUT
+	invocation_type = INVOCATION_WHISPER
 	invocations = list("Для меня всегда найдётся тень!", "Попробуй найди меня!")
 
 	charge_required = TRUE
