@@ -358,9 +358,9 @@
 	// Seer - support and help
 	)
 	var/list/seer_bundle = list(
-		/datum/action/cooldown/spell/augment_buff/attune_hawk,
-		/datum/action/cooldown/spell/augment_buff/attune_haste,
-		/datum/action/cooldown/spell/augment_buff/fortitude,
+		/datum/action/cooldown/spell/augment_buff/guidance,
+		/datum/action/cooldown/spell/augment_buff/precognition,
+		/datum/action/cooldown/spell/augment_buff/surge,
 		/datum/action/cooldown/spell/arcyne_forge,
 		/datum/action/cooldown/spell/mending,
 		/datum/action/cooldown/spell/lesser_knock,
