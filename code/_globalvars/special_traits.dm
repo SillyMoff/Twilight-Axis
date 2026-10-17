@@ -48,11 +48,18 @@ GLOBAL_LIST_INIT(special_traits, build_special_traits())
 	if(player.prefs.qsr_pref)
 		apply_qsr_trait(character, player)
 	character.mind.triumph_discount_remaining = get_donator_triumph_discount(player.ckey)
+	var/mob/loadout_user = player.mob // TA EDIT
+	if(loadout_user?.ckey) // TA EDIT
+		player.prefs.sanitize_subscription_loadout(loadout_user) // TA EDIT
+	var/loadout_slots_left = loadout_user?.ckey ? player.prefs.get_loadout_size(loadout_user) : 0 // TA EDIT
 	if(player.prefs.gear_list)
 		for(var/key in player.prefs.gear_list)
+			if(loadout_slots_left <= 0) // TA EDIT
+				break // TA EDIT
 			var/datum/loadout_item/item = GLOB.loadout_items_by_name[key]
-			if(!item)
+			if(!item || !item.path || item.get_loadout_lock_reason(loadout_user)) // TA EDIT
 				continue
+			loadout_slots_left-- // TA EDIT
 			if(item.triumph_cost)
 				character.mind.special_items["[item.name][TRIUMPH_STASH_SUFFIX]"] = item.path
 			else
@@ -273,9 +280,10 @@ GLOBAL_LIST_INIT(special_traits, build_special_traits())
 			needs_extra_vice = TRUE
 		else
 			has_extra_vice = TRUE
-	for(var/datum/charflaw/cf in character.charflaws)
+	for(var/datum/charflaw/cf in character.charflaws.Copy()) // TA EDIT START - iterate a copy, a flaw may remove itself while applying
 		cf.apply_post_equipment(character)
-		record_featured_object_stat(FEATURED_STATS_VICES, cf.name)
+		if(cf in character.charflaws) // a flaw replaced during application never took root
+			record_featured_object_stat(FEATURED_STATS_VICES, cf.name) // TA EDIT END
 	if(needs_extra_vice && !has_extra_vice)
 		var/datum/charflaw/randflaw/rf = new()
 		character.charflaws.Add(rf)
