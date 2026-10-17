@@ -69,7 +69,7 @@
 	righthand_file = null
 	icon = 'icons/roguetown/weapons/unarmed32.dmi'
 	icon_state = "claw_r"
-	force = 22
+	force = 23
 
 /obj/item/rogueweapon/beast_claws/Initialize()
 	. = ..()
