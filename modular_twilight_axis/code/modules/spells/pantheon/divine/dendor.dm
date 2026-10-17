@@ -4,19 +4,18 @@
 	spell_color = GLOW_COLOR_EARTHEN
 	invocations = list("Threefather! Give me your protect!")
 	dismiss_invocation = ""
-	ward_type = /obj/item/clothing/suit/roguetown/armor/manual/arcyne_ward/druid
+	ward_type = /obj/item/clothing/suit/roguetown/armor/manual/arcyne_ward/crystalhide/druid
 
-/obj/item/clothing/suit/roguetown/armor/manual/arcyne_ward/druid
+/obj/item/clothing/suit/roguetown/armor/manual/arcyne_ward/crystalhide/druid
 	name = "vine armor"
 	desc = "An holy vine's armor."
 	ward_color = GLOW_COLOR_EARTHEN
-	max_integrity = UPGRADE_ARCYNE_INTEGRITY
 
-/obj/item/clothing/suit/roguetown/armor/manual/arcyne_ward/druid/setup_ward(mob/living/carbon/human/user)
+/obj/item/clothing/suit/roguetown/armor/manual/arcyne_ward/crystalhide/druid/setup_ward(mob/living/carbon/human/user)
 	. = ..()
 	user.apply_status_effect(/datum/status_effect/buff/vinearmour)
 
-/obj/item/clothing/suit/roguetown/armor/manual/arcyne_ward/druid/cleanup_ward()
+/obj/item/clothing/suit/roguetown/armor/manual/arcyne_ward/crystalhide/druid/cleanup_ward()
 	if(ward_owner)
 		ward_owner.remove_status_effect(/datum/status_effect/buff/vinearmour)
 
