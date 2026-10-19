@@ -38391,7 +38391,7 @@
 /turf/open/lava,
 /area/rogue/indoors/town/fire_chamber/helly)
 "fUe" = (
-/mob/living/carbon/human/species/familiar/infernal,
+/mob/living/simple_animal/hostile/retaliate/rogue/infernal/hellhound,
 /turf/open/floor/rogue/volcanic,
 /area/rogue/indoors/cave)
 "fUg" = (
@@ -43481,9 +43481,9 @@
 /turf/open/floor/rogue/concrete,
 /area/rogue/indoors/shelter/bog)
 "gIf" = (
-/mob/living/carbon/human/species/familiar/infernal,
-/turf/open/floor/rogue/lightpath,
-/area/rogue/indoors/cave)
+/mob/living/simple_animal/hostile/retaliate/rogue/mimic,
+/turf/open/floor/rogue/greenstone,
+/area/rogue/indoors/shelter/bog)
 "gIg" = (
 /turf/open/floor/carpet/royalblack,
 /area/rogue/indoors/town/garrison)
@@ -53628,10 +53628,6 @@
 /obj/structure/leyline/normal/coast,
 /turf/open/floor/rogue/naturalstone,
 /area/rogue/under/cavewet)
-"ipW" = (
-/mob/living/carbon/human/species/familiar/fae/starfield_crow,
-/turf/open/floor/rogue/greenstone/runed,
-/area/rogue/indoors/shelter/bog)
 "iqa" = (
 /obj/structure/fluff/railing/border{
 	dir = 4
@@ -119505,6 +119501,7 @@
 /obj/effect/wisp/prestidigitation/willowwisp{
 	pixel_x = -1
 	},
+/mob/living/simple_animal/hostile/retaliate/rogue/mimic,
 /turf/open/floor/rogue/greenstone/runed,
 /area/rogue/indoors/shelter/bog)
 "sHA" = (
@@ -218411,7 +218408,7 @@ fyc
 pgs
 bVS
 vJR
-qGO
+fUe
 qGO
 nKM
 nKM
@@ -218843,7 +218840,7 @@ fyc
 xoT
 xoT
 uXq
-gIf
+fYB
 nKM
 nKM
 dHD
@@ -219709,8 +219706,8 @@ iKu
 fYB
 dXn
 qLx
-fUe
 qGO
+fUe
 dAp
 uwR
 qGO
@@ -543277,7 +543274,7 @@ pCo
 pCo
 pcH
 mmZ
-ipW
+jCB
 jCB
 sHx
 aOo
@@ -543706,13 +543703,13 @@ fpf
 kKp
 kKp
 hgi
-mmZ
+gIf
 jCB
 jCB
 jCB
 qcF
 jCB
-mmZ
+gIf
 pCo
 kKp
 kKp
@@ -544576,7 +544573,7 @@ vZQ
 mmZ
 jCB
 jCB
-qjf
+pcH
 hgi
 kKp
 kKp
