@@ -10,6 +10,7 @@
 	name = "vine armor"
 	desc = "An holy vine's armor."
 	ward_color = GLOW_COLOR_EARTHEN
+	armor = ARMOR_LEATHER
 
 /obj/item/clothing/suit/roguetown/armor/manual/arcyne_ward/crystalhide/druid/setup_ward(mob/living/carbon/human/user)
 	. = ..()
