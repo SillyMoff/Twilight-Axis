@@ -24089,6 +24089,11 @@
 /mob/living/carbon/human/species/goblin/npc/cave,
 /turf/open/floor/rogue/naturalstone,
 /area/rogue/under/cave)
+"dGt" = (
+/mob/living/carbon/human/species/human/northern/bog_deserters,
+/obj/structure/chair/stool/rogue,
+/turf/open/floor/rogue/dirt/road,
+/area/rogue/outdoors/bograt/west)
 "dGy" = (
 /obj/item/reagent_containers/food/snacks/smallrat,
 /turf/open/floor/rogue/cobble/mossy,
@@ -42147,6 +42152,12 @@
 /obj/effect/decal/cleanable/blood/splatter,
 /turf/open/floor/rogue/carpet/lord/center,
 /area/rogue/under/cave/licharena/grim)
+"gxo" = (
+/obj/structure/stairs{
+	dir = 1
+	},
+/turf/open/floor/rogue/ruinedwood/spiral,
+/area/rogue/indoors/town/bath)
 "gxs" = (
 /obj/structure/fluff/railing/corner/south_west,
 /turf/open/floor/rogue/carpet/lord/center,
@@ -99045,6 +99056,15 @@
 /obj/structure/mineral_door/wood/towner,
 /turf/open/floor/rogue/ruinedwood/turned,
 /area/rogue/indoors/town)
+"prZ" = (
+/obj/effect/decal/cobbleedge{
+	dir = 1;
+	icon_state = "borderfall";
+	pixel_x = 0;
+	pixel_y = 4
+	},
+/turf/open/floor/rogue/ruinedwood/spiral,
+/area/rogue/indoors/town/bath)
 "psa" = (
 /obj/item/natural/rock{
 	pixel_x = 5;
@@ -104360,6 +104380,11 @@
 /obj/machinery/light/rogue/candle/green,
 /turf/open/floor/rogue/concrete,
 /area/rogue/indoors/town/church)
+"qjI" = (
+/mob/living/carbon/human/species/human/northern/bog_deserters,
+/obj/structure/chair/stool/rogue,
+/turf/open/floor/rogue/grass,
+/area/rogue/outdoors/bograt/west)
 "qjJ" = (
 /obj/item/storage/roguebag{
 	pixel_x = -1;
@@ -114870,13 +114895,10 @@
 /turf/open/floor/rogue/ruinedwood,
 /area/rogue/indoors/shelter/bog)
 "rUg" = (
-/obj/machinery/light/rogue/oven/south{
-	pixel_x = -32;
-	pixel_y = 1
-	},
 /obj/machinery/light/rogue/hearth{
 	pixel_y = 5
 	},
+/obj/machinery/light/rogue/oven/east,
 /turf/open/floor/rogue/tile/brownbrick,
 /area/rogue/indoors/town/bath)
 "rUh" = (
@@ -126378,7 +126400,7 @@
 /obj/structure/mineral_door/wood/red{
 	locked = 1;
 	lockid = "nightmaiden";
-	name = "Storage Closet"
+	name = "Dormitory"
 	},
 /turf/open/floor/rogue/cobble,
 /area/rogue/indoors/town/bath)
@@ -140298,10 +140320,10 @@
 /turf/open/floor/rogue/ruinedwood/herringbone,
 /area/rogue/indoors)
 "vUB" = (
-/obj/structure/mineral_door/wood/red{
+/obj/structure/mineral_door/wood/violet{
 	locked = 1;
-	lockid = "nightmaiden";
-	name = "Storage Closet"
+	lockid = "nightman";
+	name = "Nighmaster's Office"
 	},
 /turf/open/floor/rogue/ruinedwood/spiral,
 /area/rogue/indoors/town/bath)
@@ -203681,7 +203703,7 @@ gBV
 idl
 pMf
 pDJ
-tbs
+prZ
 tbs
 rhw
 wRA
@@ -204113,7 +204135,7 @@ soz
 ddp
 dOe
 xCt
-tbs
+prZ
 tbs
 rhw
 vcf
@@ -204545,7 +204567,7 @@ cAm
 iaU
 mVc
 tLa
-cAm
+gxo
 tbs
 vUB
 aSr
@@ -204977,7 +204999,7 @@ cAm
 vXL
 vXL
 xCt
-tbs
+prZ
 tbs
 rhw
 jQa
@@ -269578,7 +269600,7 @@ rfA
 rfA
 lxs
 lxs
-ujL
+qjI
 rfA
 drd
 rfA
@@ -270010,7 +270032,7 @@ ujL
 ujL
 rfA
 lxs
-ujL
+itI
 ujL
 smf
 ujL
@@ -270442,7 +270464,7 @@ ujL
 ujL
 eTK
 lxs
-lxs
+dGt
 ujL
 ujL
 ujL
@@ -275660,7 +275682,7 @@ aHG
 qbW
 smf
 lxs
-lxs
+anz
 smf
 smf
 qCt
@@ -278707,7 +278729,7 @@ lxs
 ujL
 ujL
 ujL
-ujL
+ajq
 tTP
 tTP
 sRG
@@ -279116,7 +279138,7 @@ qCt
 qCt
 smf
 rfA
-lxs
+anz
 rfA
 rfA
 rfA
@@ -280005,7 +280027,7 @@ ujL
 ujL
 lxs
 lxs
-lxs
+anz
 lxs
 smf
 hvB
@@ -286025,7 +286047,7 @@ oyv
 ujL
 ujL
 wqK
-ujL
+ajq
 xHK
 ujL
 smf
@@ -286452,7 +286474,7 @@ rfA
 rfA
 ujL
 ujL
-ujL
+ajq
 rfA
 grS
 lxs
