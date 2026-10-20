@@ -4155,6 +4155,9 @@
 "aBM" = (
 /turf/open/water/ocean/deep/dark,
 /area/rogue/under/cavewet)
+"aBQ" = (
+/turf/open/floor/rogue/metal/barograte,
+/area/rogue/indoors/inq/import)
 "aBR" = (
 /obj/machinery/light/rogue/torchholder/r,
 /turf/open/floor/rogue/concrete,
@@ -17543,7 +17546,7 @@
 	dir = 6
 	},
 /turf/open/floor/rogue/metal/barograte,
-/area/rogue/indoors/inq/basement/shipshold)
+/area/rogue/indoors/inq/import)
 "cGY" = (
 /obj/item/natural/stone{
 	pixel_x = 12;
@@ -60212,6 +60215,12 @@
 /obj/structure/table/wood/crafted,
 /turf/open/floor/carpet/royalblack,
 /area/rogue/indoors/town/dwarfin/rockhill)
+"joR" = (
+/obj/effect/decal/cleanable/blood/tracks{
+	dir = 4
+	},
+/turf/open/floor/rogue/metal/barograte,
+/area/rogue/indoors/inq/import)
 "joT" = (
 /obj/effect/decal/edge{
 	color = "#868686"
@@ -249119,9 +249128,9 @@ oIT
 aKw
 aKw
 egu
-isH
-rij
-isH
+aBQ
+joR
+aBQ
 aYH
 aKw
 aKw
@@ -249551,8 +249560,8 @@ oIT
 qmr
 rmY
 aYH
-isH
-isH
+aBQ
+aBQ
 cGT
 nWo
 rmY
