@@ -16,6 +16,7 @@
 		STATKEY_WIL = 1,
 		STATKEY_STR = 1,
 		STATKEY_PER = 2,
+		STATKEY_INT = -1,
 		STATKEY_SPD = -1
 	)
 	subclass_skills = list(
@@ -102,6 +103,7 @@
 			if("Body")
 				H.change_stat(STATKEY_STR, 1)
 				H.change_stat(STATKEY_WIL, 1)
-				H.change_stat(STATKEY_CON, 1) //Теряет 3 стата (ЕСЛИ СУДИТЬ ПО БАЛАНСУ ОФФОВ, ТО 4, сила же ЗА ДВА да))), т.к. моментум мидкомбат регенит стамину при каждом стаке, если конечно набить, думаю зарезать за это 3 стата будет честным.
+				H.change_stat(STATKEY_CON, 1)
+				H.change_stat(STATKEY_INT, 1) //Теряет 5 стата (Котеска уточнил, что для баланса надо убрать ещё один стат, до этого было стрл вил кон)
 			if("Momentum")
 				H.mind.AddSpell(new /obj/effect/proc_holder/spell/self/zeybek_momentum/janissary)
