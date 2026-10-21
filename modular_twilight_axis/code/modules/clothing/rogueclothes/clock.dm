@@ -1,3 +1,10 @@
+/datum/looping_sound/handclockloop
+	mid_sounds = list('modular_twilight_axis/sound/items/clocks.ogg')
+	mid_length = 20
+	volume = 40
+	extra_range = -3
+	ignore_walls = FALSE
+
 /obj/item/clock_capped
 	name = "gold handclock"
 	desc = "Произведение инженерного искусства под красивой золотой крышкой со знаком Астраты. Всегда знай какой сейчас час и день!"
@@ -16,7 +23,7 @@
 	hitsound = 'sound/blank.ogg'
 	sellprice = 0
 	resistance_flags = FIRE_PROOF
-	var/datum/looping_sound/clockloop/soundloop
+	var/datum/looping_sound/handclockloop/soundloop
 	var/open = FALSE
 	var/wrist_display = FALSE
 
