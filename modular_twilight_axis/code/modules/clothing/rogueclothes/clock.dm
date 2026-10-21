@@ -15,6 +15,7 @@
 	slot_flags = ITEM_SLOT_CLOAK | ITEM_SLOT_HIP | ITEM_SLOT_BACK_R | ITEM_SLOT_BACK_L
 	grid_height = 32
 	grid_width = 32
+	w_class = WEIGHT_CLASS_SMALL
 	throw_speed = 3
 	throw_range = 7
 	throwforce = 15
@@ -42,7 +43,7 @@
 		return ..()
 
 	wrist_display = !wrist_display
-	to_chat(user, span_info("You adjust \the [src] to [wrist_display ? "display on your wrists" : "display around your neck"]."))
+	to_chat(user, span_info("You adjust clock's place on your body"))
 	if(wrist_display)
 		mob_overlay_icon = 'modular_twilight_axis/icons/clothing/onmob/clocks_belt.dmi'
 		sleeved = 'modular_twilight_axis/icons/clothing/onmob/clocks_belt.dmi'
@@ -134,6 +135,7 @@
 	slot_flags = ITEM_SLOT_CLOAK | ITEM_SLOT_HIP | ITEM_SLOT_BACK_R | ITEM_SLOT_BACK_L
 	grid_height = 32
 	grid_width = 32
+	w_class = WEIGHT_CLASS_SMALL
 	throw_speed = 3
 	throw_range = 7
 	throwforce = 15
@@ -159,7 +161,7 @@
 		return ..()
 
 	wrist_display = !wrist_display
-	to_chat(user, span_info("You adjust \the [src] to [wrist_display ? "display on your wrists" : "display around your neck"]."))
+	to_chat(user, span_info("You adjust clock's place on your body"))
 	if(wrist_display)
 		mob_overlay_icon = 'modular_twilight_axis/icons/clothing/onmob/clocks_belt.dmi'
 		sleeved = 'modular_twilight_axis/icons/clothing/onmob/clocks_belt.dmi'
