@@ -22,7 +22,7 @@
 	force = 15
 	dropshrink = 0
 	hitsound = 'sound/blank.ogg'
-	sellprice = 100
+	sellprice = 0
 	resistance_flags = FIRE_PROOF
 	var/datum/looping_sound/handclockloop/soundloop
 	var/open = FALSE
@@ -87,7 +87,7 @@
 	icon_state = "clock_s"
 	item_state = "clock_s"
 	open = FALSE
-	sellprice = 100
+	sellprice = 0
 
 /obj/item/clock_capped/silver/attack_self(mob/living/user)
 	if(!open)
@@ -142,7 +142,7 @@
 	force = 15
 	dropshrink = 0
 	hitsound = 'sound/blank.ogg'
-	sellprice = 30
+	sellprice = 0
 	resistance_flags = FIRE_PROOF
 	var/wrist_display = FALSE
 
@@ -184,7 +184,7 @@
 	desc = "Красивые, хоть и простые часы из железа на такой же железной цепочке. Стекло сохраняет стрелки и механизм от пыли и грязи."
 	icon_state = "clock_i"
 	item_state = "clock_i"
-	sellprice = 20
+	sellprice = 0
 
 /datum/anvil_recipe/engineering/clock_g
 	name = "Gold Pocket Clock"
