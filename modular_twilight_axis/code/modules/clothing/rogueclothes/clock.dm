@@ -191,7 +191,6 @@
 	req_bar = /obj/item/ingot/gold
 	additional_items = list(/obj/item/roguegear)
 	created_item = /obj/item/clock_capped
-	display_category = ITEM_CAT_VALUABLES_RINGS
 	craftdiff = SKILL_LEVEL_EXPERT
 
 /datum/anvil_recipe/engineering/clock_s
@@ -199,7 +198,6 @@
 	req_bar = /obj/item/ingot/silver
 	additional_items = list(/obj/item/roguegear)
 	created_item = /obj/item/clock_capped/silver
-	display_category = ITEM_CAT_VALUABLES_RINGS
 	craftdiff = SKILL_LEVEL_EXPERT
 
 /datum/anvil_recipe/engineering/clock_br
@@ -207,7 +205,6 @@
 	req_bar = /obj/item/ingot/bronze
 	additional_items = list(/obj/item/roguegear)
 	created_item = /obj/item/clock
-	display_category = ITEM_CAT_VALUABLES_RINGS
 	craftdiff = SKILL_LEVEL_JOURNEYMAN
 
 /datum/anvil_recipe/engineering/clock_i
@@ -215,5 +212,4 @@
 	req_bar = /obj/item/ingot/iron
 	additional_items = list(/obj/item/roguegear)
 	created_item = /obj/item/clock/iron
-	display_category = ITEM_CAT_VALUABLES_RINGS
 	craftdiff = SKILL_LEVEL_EXPERT
