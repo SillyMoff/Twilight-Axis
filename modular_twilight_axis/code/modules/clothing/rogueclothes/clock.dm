@@ -1,18 +1,18 @@
 /datum/looping_sound/handclockloop
 	mid_sounds = list('modular_twilight_axis/sound/items/clocks.ogg')
 	mid_length = 20
-	volume = 40
+	volume = 70
 	extra_range = -3
 	ignore_walls = FALSE
 
 /obj/item/clock_capped
-	name = "gold handclock"
+	name = "gold pocket clock"
 	desc = "Произведение инженерного искусства под красивой золотой крышкой со знаком Астраты. Всегда знай какой сейчас час и день!"
 	icon = 'modular_twilight_axis/icons/clothing/clocks.dmi'
 	mob_overlay_icon = 'modular_twilight_axis/icons/clothing/onmob/clocks.dmi'
 	icon_state = "clock_g"
 	item_state = "clock_g"
-	slot_flags = ITEM_SLOT_CLOAK | ITEM_SLOT_WRISTS | SLOT_BELT | ITEM_SLOT_HIP
+	slot_flags = ITEM_SLOT_CLOAK | ITEM_SLOT_HIP | ITEM_SLOT_BACK_R | ITEM_SLOT_BACK_L
 	grid_height = 32
 	grid_width = 32
 	throw_speed = 3
@@ -21,7 +21,7 @@
 	force = 15
 	dropshrink = 0
 	hitsound = 'sound/blank.ogg'
-	sellprice = 0
+	sellprice = 100
 	resistance_flags = FIRE_PROOF
 	var/datum/looping_sound/handclockloop/soundloop
 	var/open = FALSE
@@ -60,14 +60,12 @@
 		open = TRUE
 		playsound(src, 'sound/items/blackmirror_open.ogg', 100, FALSE)
 		icon_state = "clock_g_o"
-		item_state = "clock_g_o"
 		soundloop = new(src, FALSE)
 		soundloop.start()
 	else
 		open = FALSE
 		playsound(src, 'sound/items/blackmirror_shut.ogg', 100, FALSE)
 		icon_state = "clock_g"
-		item_state = "clock_g"
 		soundloop.stop()
 	..()
 
@@ -83,29 +81,28 @@
 		. += "Oh no, it's [station_time_timestamp("hh:mm")] on a [day]"
 
 /obj/item/clock_capped/silver
-	name = "silver handclock"
+	name = "silver pocket clock"
 	desc = "Произведение инженерного искусства под красивой серебряной крышкой со знаком Псайдона. Всегда знай какой сейчас час и день!"
 	icon_state = "clock_s"
 	item_state = "clock_s"
 	open = FALSE
+	sellprice = 100
 
 /obj/item/clock_capped/silver/attack_self(mob/living/user)
 	if(!open)
 		open = TRUE
 		playsound(src, 'sound/items/blackmirror_open.ogg', 100, FALSE)
 		icon_state = "clock_s_o"
-		item_state = "clock_s_o"
 		soundloop = new(src, FALSE)
 		soundloop.start()
 	else
 		open = FALSE
 		playsound(src, 'sound/items/blackmirror_shut.ogg', 100, FALSE)
 		icon_state = "clock_s"
-		item_state = "clock_s"
 		soundloop.stop()
 
 /obj/item/clock_capped/compas
-	name = "golden artificied clock"
+	name = "gold artificied clock"
 	desc = "Ебучий компас."
 	icon_state = "compas"
 	item_state = "compas"
@@ -114,25 +111,27 @@
 	if(!open)
 		open = TRUE
 		playsound(src, 'sound/items/blackmirror_open.ogg', 100, FALSE)
-		icon_state = "compas_o"
-		item_state = "compas_o"
+		if((GLOB.tod == "night") || (GLOB.tod == "dusk"))
+			icon_state = "compas_o"
+		else
+			icon_state = "compas_o_d"
 		soundloop = new(src, FALSE)
 		soundloop.start()
 	else
 		open = FALSE
 		playsound(src, 'sound/items/blackmirror_shut.ogg', 100, FALSE)
 		icon_state = "compas"
-		item_state = "compas"
 		soundloop.stop()
 
+
 /obj/item/clock
-	name = "bronze handclock"
+	name = "bronze pocket clock"
 	desc = "Красивые, хоть и простые часы из бронзы на железной цепочке. Стекло сохраняет стрелки и механизм от пыли и грязи."
 	icon = 'modular_twilight_axis/icons/clothing/clocks.dmi'
 	mob_overlay_icon = 'modular_twilight_axis/icons/clothing/onmob/clocks.dmi'
 	icon_state = "clock_br"
 	item_state = "clock_br"
-	slot_flags = ITEM_SLOT_CLOAK | ITEM_SLOT_WRISTS | SLOT_BELT | ITEM_SLOT_HIP
+	slot_flags = ITEM_SLOT_CLOAK | ITEM_SLOT_HIP | ITEM_SLOT_BACK_R | ITEM_SLOT_BACK_L
 	grid_height = 32
 	grid_width = 32
 	throw_speed = 3
@@ -141,7 +140,7 @@
 	force = 15
 	dropshrink = 0
 	hitsound = 'sound/blank.ogg'
-	sellprice = 0
+	sellprice = 30
 	resistance_flags = FIRE_PROOF
 	var/wrist_display = FALSE
 
@@ -179,7 +178,8 @@
 	. += "Oh no, it's [station_time_timestamp("hh:mm")] on a [day]"
 
 /obj/item/clock/iron
-	name = "iron handclock"
+	name = "iron pocket clock"
 	desc = "Красивые, хоть и простые часы из железа на такой же железной цепочке. Стекло сохраняет стрелки и механизм от пыли и грязи."
 	icon_state = "clock_i"
 	item_state = "clock_i"
+	sellprice = 20
