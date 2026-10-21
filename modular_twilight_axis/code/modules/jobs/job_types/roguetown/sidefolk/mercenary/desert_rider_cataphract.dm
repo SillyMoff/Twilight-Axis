@@ -5,7 +5,7 @@
 	forbidden_races = list(RACES_SMALL)
 	outfit = /datum/outfit/job/roguetown/mercenary/twilight_desert_rider_cataphract
 	subclass_languages = list(/datum/language/raneshi)
-	origin_limits = list(/datum/virtue/origin/zybantian)
+	origin_limits = list(/datum/virtue/origin/raneshen, /datum/virtue/origin/zybantian, /datum/virtue/origin/racial/crimson_lands)
 	class_select_category = CLASS_CAT_RANESHENI
 	category_tags = list(CTAG_MERCENARY, CTAG_MERCPARTY_VANGUARD)
 	traits_applied = list(TRAIT_HEAVYARMOR, TRAIT_NOBLE)
