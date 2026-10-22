@@ -71,7 +71,7 @@
 	belt = /obj/item/storage/belt/rogue/leather/shalal
 	beltr = /obj/item/storage/belt/rogue/pouch/coins/poor
 	neck = /obj/item/clothing/neck/roguetown/gorget
-	cloak = /obj/item/clothing/cloak/twilight_desert
+	cloak = /obj/item/clothing/cloak/catcloak
 	shirt = /obj/item/clothing/suit/roguetown/armor/gambeson/heavy/raneshen
 	armor = /obj/item/clothing/suit/roguetown/armor/chainmail/hauberk/janissary
 	pants = /obj/item/clothing/under/roguetown/platelegs/iron
