@@ -285,7 +285,7 @@
 		var/has_real_boon = FALSE
 		for(var/datum/hag_boon/B in boon_registry[v_name])
 			// If they have a valid hag boon that IS NOT a curse and IS NOT a scar
-			if(B.hag_is_valid && !B.hag_curse && !istype(B, /datum/hag_boon/curse_scar))
+			if(B.hag_is_valid && !B.hag_curse && !istype(B, /datum/hag_boon/curse_scar) && !B.cursed) // TA EDIT - ORIGINAL: if(B.hag_is_valid && !B.hag_curse && !istype(B, /datum/hag_boon/curse_scar))
 				has_real_boon = TRUE
 				break
 
