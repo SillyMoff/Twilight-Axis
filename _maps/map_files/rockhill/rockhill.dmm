@@ -5426,6 +5426,14 @@
 	},
 /turf/open/floor/rogue/ruinedwood/herringbone,
 /area/rogue/indoors)
+"aLm" = (
+/obj/structure/fluff/railing/wood{
+	dir = 1;
+	layer = 2.7;
+	pixel_y = 7
+	},
+/turf/open/floor/rogue/naturalstone,
+/area/rogue/outdoors/rtfield/rockhill)
 "aLr" = (
 /obj/item/natural/rock/coal,
 /turf/open/floor/rogue/greenstone,
@@ -10916,7 +10924,7 @@
 /turf/open/floor/rogue/ruinedwood,
 /area/rogue/indoors/shelter/bog)
 "bFq" = (
-/obj/structure/vertical_gearbox,
+/obj/structure/gearbox,
 /turf/open/floor/rogue/grass,
 /area/rogue/outdoors/rtfield/rockhill)
 "bFu" = (
@@ -29476,8 +29484,8 @@
 /turf/open/floor/rogue/blocks/stonered,
 /area/rogue/under/cave/licharena/grim)
 "etg" = (
-/mob/living/simple_animal/hostile/retaliate/rogue/swine/hog/tame,
-/turf/open/floor/rogue/dirt/road,
+/mob/living/simple_animal/hostile/retaliate/rogue/goat/tame,
+/turf/open/floor/rogue/grass,
 /area/rogue/outdoors/rtfield/rockhill)
 "eti" = (
 /obj/structure/table/wood/fancy/red,
@@ -53542,6 +53550,10 @@
 	},
 /turf/open/floor/rogue/herringbone,
 /area/rogue/under/cavewet/wizarddungeon)
+"ihU" = (
+/mob/living/simple_animal/hostile/retaliate/rogue/goatmale,
+/turf/open/floor/rogue/grass,
+/area/rogue/outdoors/rtfield/rockhill)
 "ihZ" = (
 /obj/effect/decal/cleanable/blood/old,
 /obj/effect/decal/edge{
@@ -87164,7 +87176,7 @@
 /turf/open/floor/rogue/cobble,
 /area/rogue/under/cave/orcdungeon)
 "nrV" = (
-/obj/structure/rotation_piece,
+/obj/structure/gearbox,
 /turf/closed/wall/mineral/rogue/wooddark/window,
 /area/rogue/outdoors/rtfield/rockhill/above)
 "nrX" = (
@@ -102589,8 +102601,12 @@
 /turf/open/floor/rogue/concrete,
 /area/rogue/under/cave/abyssor/inner)
 "pIu" = (
-/obj/structure/flora/roguegrass/water/reeds,
-/turf/open/water/swamp/deep,
+/obj/structure/fluff/railing/wood{
+	dir = 8;
+	pixel_x = -10
+	},
+/obj/structure/flora/roguegrass,
+/turf/open/floor/rogue/grass,
 /area/rogue/outdoors/rtfield/rockhill)
 "pIx" = (
 /obj/effect/decal/edge{
@@ -103142,7 +103158,7 @@
 /turf/open/floor/rogue/blocks,
 /area/rogue/under/cave/goblinfort)
 "pMV" = (
-/obj/structure/vertical_gearbox,
+/obj/structure/gearbox,
 /turf/open/floor/rogue/dirt/road,
 /area/rogue/outdoors/rtfield/rockhill)
 "pNc" = (
@@ -118758,6 +118774,10 @@
 	},
 /turf/open/floor/rogue/ruinedwood/spiral,
 /area/rogue/indoors)
+"slD" = (
+/mob/living/simple_animal/hostile/retaliate/rogue/swine,
+/turf/open/floor/rogue/grass,
+/area/rogue/outdoors/rtfield/rockhill)
 "slE" = (
 /obj/structure/table/wood{
 	icon_state = "tablewood3"
@@ -342002,7 +342022,7 @@ qKc
 wSn
 hyP
 qvR
-etg
+uaL
 peY
 uaL
 nkI
@@ -342433,7 +342453,7 @@ xjX
 tVN
 wSn
 peY
-qvR
+slD
 uaL
 ptV
 qvR
@@ -347194,7 +347214,7 @@ uaL
 wSn
 gTO
 uaL
-qvR
+eYY
 qvR
 eYY
 qvR
@@ -347622,10 +347642,10 @@ qvR
 kCp
 rBC
 sgw
+uaL
 qvR
-jfk
-hVU
-eYY
+qvR
+qvR
 qvR
 eYY
 eYY
@@ -348054,12 +348074,12 @@ fpw
 fpw
 pOX
 ryI
-jfk
+dqw
 pIu
-spp
-qvR
-bpD
-czk
+iNt
+lKa
+ptV
+jzB
 qvR
 qvR
 xvN
@@ -348486,13 +348506,13 @@ aCm
 rit
 gxI
 pOX
-hVU
-pIu
-bpD
-bpD
-bpD
-czk
-czk
+uaL
+uaL
+qvR
+ihU
+ptV
+jzB
+jzB
 bpD
 bpD
 bpD
@@ -348918,13 +348938,13 @@ vpU
 gxI
 vpU
 fpw
-pIu
-bpD
-bpD
-bpD
-czk
-czk
-czk
+qvR
+etg
+uaL
+qvR
+ptV
+jzB
+jzB
 bpD
 bpD
 bpD
@@ -349350,12 +349370,12 @@ pSy
 vpU
 xqq
 ryI
-qvR
-bpD
-czk
-czk
-czk
-czk
+lbn
+xor
+xor
+lbn
+aLm
+jzB
 bpD
 bpD
 bpD
@@ -349782,12 +349802,12 @@ pOX
 ryI
 pOX
 ryI
-czk
-czk
-czk
-viE
-bpD
-bpD
+jzB
+jzB
+jzB
+jzB
+jzB
+jzB
 bpD
 bpD
 bpD
@@ -350209,15 +350229,15 @@ sjP
 sjP
 sjP
 aaS
-czk
-czk
-czk
-kwT
-kwT
-czk
-czk
-czk
-bpD
+jzB
+jzB
+jzB
+aaS
+aaS
+jzB
+jzB
+jzB
+jzB
 bpD
 bpD
 bpD
@@ -350642,13 +350662,13 @@ sjP
 bpD
 bpD
 bpD
-czk
-czk
-czk
-bpD
-bpD
-bpD
-bpD
+jzB
+jzB
+jzB
+jzB
+jzB
+jzB
+jzB
 sSS
 bpD
 bpD
@@ -351074,8 +351094,8 @@ nIb
 bpD
 bpD
 bpD
-czk
-czk
+jzB
+jzB
 bpD
 bpD
 bpD
@@ -351934,7 +351954,7 @@ wSn
 sjP
 wSn
 uaL
-czk
+jzB
 czk
 bpD
 bpD
@@ -352366,7 +352386,7 @@ sjP
 sjP
 qvR
 uaL
-czk
+jzB
 czk
 czk
 bpD
@@ -353235,7 +353255,7 @@ czk
 czk
 czk
 czk
-hKr
+bpD
 bpD
 sSS
 bpD
@@ -357565,7 +357585,7 @@ bpD
 sSS
 sSS
 czk
-czk
+viE
 czk
 bpD
 sSS
@@ -458219,8 +458239,8 @@ xlA
 xlA
 xlA
 xlA
-tmH
-fZe
+xlA
+xlA
 xlA
 xlA
 xlA
@@ -458649,12 +458669,12 @@ cSF
 fIY
 xlA
 xlA
+xlA
+xlA
+xlA
+xlA
+xlA
 tmH
-tmH
-tmH
-fZe
-fZe
-fZe
 tmH
 fZe
 xlA
@@ -459080,12 +459100,12 @@ cSF
 cSF
 fIY
 xlA
-fZe
-fZe
-tmH
-tmH
-tmH
-fZe
+xlA
+xlA
+xlA
+xlA
+xlA
+xlA
 tmH
 tmH
 fZe
@@ -459512,11 +459532,11 @@ cSF
 cSF
 fIY
 xlA
-tmH
-fZe
-tmH
-tmH
-tmH
+xlA
+xlA
+xlA
+xlA
+xlA
 fZe
 tmH
 tmH
@@ -459943,10 +459963,10 @@ sZe
 sZe
 sZe
 nZd
-tmH
-tmH
-fZe
-tmH
+xlA
+xlA
+xlA
+xlA
 tmH
 tmH
 fZe
@@ -460374,10 +460394,10 @@ xlA
 xlA
 xlA
 xlA
-fZe
-fZe
-fZe
-fZe
+xlA
+xlA
+xlA
+xlA
 tmH
 tmH
 tmH
@@ -460806,8 +460826,8 @@ rbn
 xlA
 xlA
 xlA
-fZe
-fZe
+tmH
+tmH
 fZe
 fZe
 tmH
