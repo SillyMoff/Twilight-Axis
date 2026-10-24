@@ -104,7 +104,7 @@
 
 /obj/item/clock_capped/compas
 	name = "gold artificied clock"
-	desc = "Ебучий компас."
+	desc = "Компас."
 	icon_state = "compas"
 	item_state = "compas"
 
