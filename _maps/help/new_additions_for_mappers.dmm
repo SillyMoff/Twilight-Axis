@@ -194,12 +194,6 @@
 /obj/structure/table/wood/map/amber{
 	dir = 10
 	},
-/obj/structure/winch{
-	icon = 'modular_twilight_axis/icons/obj/helm.dmi';
-	icon_state = "wheel";
-	name = "steering wheel";
-	desc = "Ship's wheel."
-	},
 /turf/open/floor/rogue/tile/masonic/full_white,
 /area/rogue/indoors)
 "dc" = (
@@ -461,7 +455,8 @@
 /area/rogue/indoors)
 "iM" = (
 /obj/structure/fluff/statue/noc{
-	icon_state = "noc_alt"
+	icon_state = "noc_alt";
+	pixel_x = -17
 	},
 /turf/open/floor/rogue/tile/masonic/full_white,
 /area/rogue/indoors)
@@ -556,6 +551,10 @@
 "lg" = (
 /obj/structure/fluff/railing/border,
 /turf/open/floor/rogue/blocks/stonered/tiny,
+/area/rogue/indoors)
+"lh" = (
+/obj/effect/decal/carpet/magiccircle,
+/turf/open/floor/rogue/tile/masonic/full_white,
 /area/rogue/indoors)
 "lk" = (
 /turf/open/floor/rogue/tile/masonic,
@@ -663,6 +662,12 @@
 /obj/item/reagent_containers/glass/bucket,
 /turf/open/floor/rogue/blocks/newstone/alt,
 /area/rogue/indoors/town/physician)
+"nB" = (
+/obj/structure/fluff/statue/noc{
+	pixel_x = -15
+	},
+/turf/open/floor/rogue/tile/masonic/full_white,
+/area/rogue/indoors)
 "nJ" = (
 /obj/effect/decal/woodenborder{
 	dir = 1
@@ -1458,7 +1463,7 @@
 /turf/open/floor/rogue/tile/masonic/full_white,
 /area/rogue/indoors)
 "BZ" = (
-/obj/structure/fluff/walldeco/sign/armorsmith,
+/obj/structure/fluff/walldeco/sign/armorsmith/l,
 /turf/open/floor/rogue/tile/masonic/full_white,
 /area/rogue/indoors)
 "Ci" = (
@@ -1788,12 +1793,6 @@
 /obj/structure/table/wood/map/baotha{
 	dir = 10
 	},
-/obj/structure/winch{
-	icon = 'modular_twilight_axis/icons/obj/helm.dmi';
-	icon_state = "wheel";
-	name = "steering wheel";
-	desc = "Ship's wheel."
-	},
 /turf/open/floor/rogue/tile/masonic/full_white,
 /area/rogue/indoors)
 "IH" = (
@@ -1824,6 +1823,10 @@
 /area/rogue/indoors)
 "JO" = (
 /obj/effect/decal/cobbleedge_n/cobbleedge_w,
+/turf/open/floor/rogue/tile/masonic/full_white,
+/area/rogue/indoors)
+"JT" = (
+/obj/effect/decal/carpet/zizocircle,
 /turf/open/floor/rogue/tile/masonic/full_white,
 /area/rogue/indoors)
 "Kn" = (
@@ -3312,8 +3315,8 @@ yK
 ml
 ml
 ml
-ml
-ml
+xK
+KU
 ml
 we
 qO
@@ -3364,8 +3367,8 @@ MX
 ml
 ml
 ml
-xK
-KU
+wT
+DL
 ml
 Bv
 Av
@@ -3416,9 +3419,9 @@ rT
 ml
 ml
 ml
-wT
-DL
 ml
+ml
+iM
 ET
 QL
 sm
@@ -3470,7 +3473,7 @@ ml
 ml
 ml
 ml
-iM
+ml
 bf
 IK
 jh
@@ -3522,7 +3525,7 @@ ml
 ml
 ml
 ml
-ml
+nB
 ab
 JM
 sW
@@ -3627,10 +3630,10 @@ ml
 ml
 ml
 ml
+JT
 ml
 ml
-ml
-ml
+lh
 ml
 NX
 qD

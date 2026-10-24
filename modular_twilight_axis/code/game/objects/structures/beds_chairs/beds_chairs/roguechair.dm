@@ -1,3 +1,15 @@
+/obj/structure/chair/smallbench
+	name = "small bench"
+	icon = 'icons/roguetown/misc/structure.dmi'
+	icon_state = "benchsmall"
+	buildstackamount = 1
+	item_chair = null
+	destroy_sound = 'sound/combat/hits/onwood/destroyfurniture.ogg'
+	attacked_sound = "woodimpact"
+	sleepy = 0.5
+	layer = OBJ_LAYER
+	density = FALSE
+
 /obj/structure/chair/bench/chaiselounge
 	name = "Chaise lounge"
 	desc = "A particularly affluent piece of furniture, upholstered with red fabric."
@@ -70,4 +82,4 @@
 	can_buckle = TRUE
 	buckle_lying = 90
 	sleepy = 3
-	debris = list(/obj/item/grown/log/tree/small = 1)
+	debris = list(/obj/item/natural/stone = 1)

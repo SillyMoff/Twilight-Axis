@@ -102,7 +102,7 @@
 	max_integrity = 100
 	obj_integrity = 100
 
-/obj/structure/fluff/walldeco/sign/armorsmith
+/obj/structure/fluff/walldeco/sign/armorsmith/l
 	name = "armorsmith sign"
 	icon = 'modular_twilight_axis/icons/roguetown/misc/decoration.dmi'
 	icon_state = "shopsign_armorsmith_left"

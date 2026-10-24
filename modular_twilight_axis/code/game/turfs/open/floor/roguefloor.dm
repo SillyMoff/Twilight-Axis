@@ -58,6 +58,9 @@
 /turf/open/floor/rogue/grassgrey/cardinal_smooth(adjacencies)
 	roguesmooth(adjacencies)
 
+/turf/open/floor/rogue/tile/bath
+	icon = 'modular_twilight_axis/icons/turf/roguefloor.dmi'
+
 /turf/open/floor/rogue/tile/bath/bathtile_pool
 	icon = 'modular_twilight_axis/icons/turf/roguefloor.dmi'
 	icon_state = "bathtile_pool"
