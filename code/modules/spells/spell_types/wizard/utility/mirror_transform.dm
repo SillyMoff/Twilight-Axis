@@ -572,8 +572,8 @@
 				to_chat(H, span_warning("You don't have breasts!")) // TA EDIT END
 
 		if("Vagina")
-			// var/list/valid_vagina_types = list("none", "human", "hairy", "spade", "furred", "gaping", "cloaca")
-			ar/list/valid_vagina_types = list("none") // TA EDIT
+			// var/list/valid_vagina_types = list("none", "human", "hairy", "spade", "furred", "gaping", "cloaca") TA EDIT
+			var/list/valid_vagina_types = list("none") // TA EDIT
 			for(var/vagina_path in subtypesof(/datum/sprite_accessory/vagina)) // TA EDIT
 				var/datum/sprite_accessory/vagina/vagina = new vagina_path() // TA EDIT
 				valid_vagina_types[vagina.name] = vagina_path // TA EDIT
