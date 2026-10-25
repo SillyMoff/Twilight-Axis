@@ -103220,7 +103220,6 @@
 /turf/open/floor/rogue/cobble,
 /area/rogue/indoors/shelter/bog/bogmanfort)
 "pHK" = (
-/obj/structure/table/wood/poor,
 /obj/structure/table/wood/tablewood_brown,
 /turf/open/floor/rogue/ruinedwood/spiral,
 /area/rogue/indoors/town)
@@ -144565,7 +144564,6 @@
 /area/rogue/indoors/town)
 "wfq" = (
 /obj/machinery/light/rogue/candle/l,
-/obj/structure/table/wood/poor,
 /obj/structure/table/wood/tablewood_green,
 /turf/open/floor/rogue/ruinedwood/spiral,
 /area/rogue/indoors/town)
