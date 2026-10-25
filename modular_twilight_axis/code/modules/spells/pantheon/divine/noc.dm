@@ -498,23 +498,24 @@
 
 /datum/action/cooldown/spell/undivided/undivided_spellpack
 	miracle_generalist_bundle = list(
-		/datum/action/cooldown/spell/darkvision/undivided::name		= /datum/action/cooldown/spell/darkvision/undivided,
-		/datum/action/cooldown/spell/noc/invisibility::name			= /datum/action/cooldown/spell/noc/invisibility,
-		/obj/effect/proc_holder/spell/targeted/blesscrop::name		= /obj/effect/proc_holder/spell/targeted/blesscrop,
-		/obj/effect/proc_holder/spell/invoked/eora_blessing::name	= /obj/effect/proc_holder/spell/invoked/eora_blessing,
-		/datum/action/cooldown/spell/arcyne_forge/miracle::name		= /datum/action/cooldown/spell/arcyne_forge/miracle,
+		/datum/action/cooldown/spell/darkvision/undivided::name		=/datum/action/cooldown/spell/darkvision/undivided,
+		/datum/action/cooldown/spell/noc/invisibility::name			=/datum/action/cooldown/spell/noc/invisibility,
+		/datum/action/cooldown/spell/noc/enlightenment::name		=/datum/action/cooldown/spell/noc/enlightenment,
+		/obj/effect/proc_holder/spell/invoked/diagnose::name		=/obj/effect/proc_holder/spell/invoked/diagnose,
+		/obj/effect/proc_holder/spell/invoked/bless_food::name		=/obj/effect/proc_holder/spell/invoked/bless_food,
+		/datum/action/cooldown/spell/arcyne_forge/miracle::name		=/datum/action/cooldown/spell/arcyne_forge/miracle,
 	)
 	miracle_acolyte_bundle = list(
-		/obj/effect/proc_holder/spell/invoked/diagnose::name			= /obj/effect/proc_holder/spell/invoked/diagnose,
-		/datum/action/cooldown/spell/noc/TAblindness::name				= /datum/action/cooldown/spell/noc/TAblindness,
-		/obj/effect/proc_holder/spell/invoked/bless_food::name			= /obj/effect/proc_holder/spell/invoked/bless_food,
-		/obj/effect/proc_holder/spell/invoked/avert::name				= /obj/effect/proc_holder/spell/invoked/avert,
-		/obj/effect/proc_holder/spell/invoked/attach_bodypart::name		= /obj/effect/proc_holder/spell/invoked/attach_bodypart,
+		/datum/action/cooldown/spell/miracle/fortify::name			=/datum/action/cooldown/spell/miracle/fortify,
+		/obj/effect/proc_holder/spell/invoked/abyssheal::name		=/obj/effect/proc_holder/spell/invoked/abyssheal,
+		/obj/effect/proc_holder/spell/invoked/eora_blessing::name	=/obj/effect/proc_holder/spell/invoked/eora_blessing,
+		/obj/effect/proc_holder/spell/targeted/blesscrop::name		=/obj/effect/proc_holder/spell/targeted/blesscrop,
+		/datum/action/cooldown/spell/noc/TAblindness::name			=/datum/action/cooldown/spell/noc/TAblindness,
 	)
 	miracle_templar_bundle = list(
-		/obj/effect/proc_holder/spell/invoked/abyssor_undertow::name		= /obj/effect/proc_holder/spell/invoked/abyssor_undertow,
-		/datum/action/cooldown/spell/ravox/withstand::name					= /datum/action/cooldown/spell/ravox/withstand,
-		/datum/action/cooldown/spell/mending/malum::name					= /datum/action/cooldown/spell/mending/malum,
-		/datum/action/cooldown/spell/noc/TAhidden_rune::name					= /datum/action/cooldown/spell/noc/TAhidden_rune,
-		/obj/effect/proc_holder/spell/invoked/vendetta::name				= /obj/effect/proc_holder/spell/invoked/vendetta,
+		/datum/action/cooldown/spell/noc/TAhidden_rune::name		=/datum/action/cooldown/spell/noc/TAhidden_rune,
+		/datum/action/cooldown/spell/projectile/sacred_flame::name	=/datum/action/cooldown/spell/projectile/sacred_flame,
+		/datum/action/cooldown/spell/ravox/withstand::name			=/datum/action/cooldown/spell/ravox/withstand,
+		/obj/effect/proc_holder/spell/invoked/vendetta::name		=/obj/effect/proc_holder/spell/invoked/vendetta,
+		/datum/action/cooldown/spell/malum/hammerfall::name			=/datum/action/cooldown/spell/malum/hammerfall,
 	)
