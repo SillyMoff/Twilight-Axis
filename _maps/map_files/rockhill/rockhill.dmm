@@ -32119,6 +32119,13 @@
 	icon_state = "wooden_floort"
 	},
 /area/rogue/indoors)
+"eLU" = (
+/obj/structure/roguemachine/noticeboard/wall{
+	pixel_x = -32;
+	pixel_y = 0
+	},
+/turf/open/floor/rogue/ruinedwood/spiral,
+/area/rogue/indoors/town/manor/rockhill)
 "eLV" = (
 /turf/closed/wall/mineral/rogue/wooddark/horizontal,
 /area/rogue/indoors/town/garrison)
@@ -32692,6 +32699,15 @@
 /obj/item/storage/roguebag,
 /turf/open/floor/rogue/herringbone,
 /area/rogue/indoors/town/physician)
+"eQG" = (
+/obj/machinery/light/roguestreet/orange/walllamp{
+	dir = 4
+	},
+/obj/structure/roguemachine/talkstatue/mercenary/rockhill{
+	pixel_x = -32
+	},
+/turf/open/floor/rogue/ruinedwood/spiral,
+/area/rogue/indoors/town/manor/rockhill)
 "eQI" = (
 /obj/structure/bookcase{
 	density = 0;
@@ -37841,6 +37857,16 @@
 "fIJ" = (
 /turf/closed/wall/mineral/rogue/roofwall/innercorner/dir4,
 /area/rogue/indoors)
+"fIK" = (
+/obj/effect/decal/edge{
+	color = "#3f3f3f";
+	dir = 1
+	},
+/obj/structure/roguemachine/noticeboard/wall{
+	pixel_y = -32
+	},
+/turf/open/floor/rogue/tile/bluebrick,
+/area/rogue/indoors/town/magician/tower)
 "fIL" = (
 /obj/structure/flora/ausbushes/reedbush,
 /turf/open/water/swamp,
@@ -51251,15 +51277,15 @@
 /turf/open/floor/rogue/metal/barograte,
 /area/rogue/outdoors/beach/inqshipout)
 "hMC" = (
-/obj/structure/roguemachine/talkstatue/mercenary{
-	pixel_y = 32
-	},
 /obj/effect/decal/cobbleedge{
 	dir = 1;
 	icon_state = "borderfall"
 	},
 /obj/item/roguemachine/zadcote/hand{
 	pixel_y = 15
+	},
+/obj/structure/roguemachine/talkstatue/mercenary/rockhill{
+	pixel_y = 32
 	},
 /turf/open/floor/carpet/royalblack,
 /area/rogue/indoors/town/manor/rockhill)
@@ -68506,7 +68532,7 @@
 /area/rogue/indoors)
 "kqL" = (
 /obj/structure/roguemachine/contractledger,
-/obj/structure/roguemachine/talkstatue/mercenary{
+/obj/structure/roguemachine/talkstatue/mercenary/rockhill{
 	pixel_y = 32
 	},
 /turf/open/floor/rogue/tile,
@@ -94839,7 +94865,7 @@
 /turf/open/floor/rogue/hay,
 /area/rogue/under/underdark/south)
 "otC" = (
-/obj/structure/roguemachine/talkstatue/mercenary{
+/obj/structure/roguemachine/talkstatue/mercenary/rockhill{
 	pixel_y = 32
 	},
 /turf/open/floor/rogue/ruinedwood/herringbone,
@@ -113236,12 +113262,12 @@
 /turf/open/floor/rogue/tile/harem2,
 /area/rogue/outdoors/rtfield/abandonedhotsprings)
 "rlO" = (
-/obj/structure/roguemachine/talkstatue/mercenary{
-	pixel_y = 32
-	},
 /obj/machinery/light/rogue/candle/r,
 /obj/structure/chair/bench/chaiselounge/r{
 	pixel_y = 5
+	},
+/obj/structure/roguemachine/talkstatue/mercenary/rockhill{
+	pixel_y = 32
 	},
 /turf/open/floor/rogue/ruinedwood/herringbone_clear,
 /area/rogue/indoors/town/manor/rockhill)
@@ -142806,6 +142832,12 @@
 	},
 /turf/open/floor/rogue/naturalstone,
 /area/rogue/indoors/town/fire_chamber/helly)
+"vRD" = (
+/obj/structure/roguemachine/talkstatue/mercenary/rockhill{
+	pixel_x = -32
+	},
+/turf/open/floor/rogue/ruinedwood/herringbone_clear,
+/area/rogue/indoors/town/manor/rockhill)
 "vRF" = (
 /obj/structure/fermentation_keg/water,
 /turf/open/floor/rogue/ruinedwood/herringbone,
@@ -155446,7 +155478,7 @@
 /turf/open/floor/rogue/cobble,
 /area/rogue/outdoors/town/rockhill)
 "xNy" = (
-/obj/structure/roguemachine/talkstatue/mercenary{
+/obj/structure/roguemachine/talkstatue/mercenary/rockhill{
 	pixel_y = 32
 	},
 /turf/open/floor/rogue/twig,
@@ -415481,7 +415513,7 @@ cpC
 lyv
 lyv
 qze
-bGf
+fIK
 iLp
 bGx
 bGx
@@ -440904,8 +440936,8 @@ nQg
 nEn
 jRC
 pBN
-rSJ
-jRC
+eQG
+eLU
 jRC
 jRC
 fUM
@@ -661221,7 +661253,7 @@ eTn
 mNn
 aHx
 kel
-rbV
+vRD
 rbV
 mXK
 rbV
