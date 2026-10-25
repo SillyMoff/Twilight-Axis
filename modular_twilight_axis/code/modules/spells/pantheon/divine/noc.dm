@@ -505,14 +505,14 @@
 		/obj/effect/proc_holder/spell/invoked/bless_food::name		=/obj/effect/proc_holder/spell/invoked/bless_food,
 		/datum/action/cooldown/spell/arcyne_forge/miracle::name		=/datum/action/cooldown/spell/arcyne_forge/miracle,
 	)
-	var/list/miracle_acolyte_bundle = list(
+	miracle_acolyte_bundle = list(
 		/datum/action/cooldown/spell/miracle/fortify::name			=/datum/action/cooldown/spell/miracle/fortify,
 		/obj/effect/proc_holder/spell/invoked/abyssheal::name		=/obj/effect/proc_holder/spell/invoked/abyssheal,
 		/obj/effect/proc_holder/spell/invoked/eora_blessing::name	=/obj/effect/proc_holder/spell/invoked/eora_blessing,
 		/obj/effect/proc_holder/spell/targeted/blesscrop::name		=/obj/effect/proc_holder/spell/targeted/blesscrop,
 		/datum/action/cooldown/spell/noc/TAblindness::name			=/datum/action/cooldown/spell/noc/TAblindness,
 	)
-	var/list/miracle_templar_bundle = list(
+	miracle_templar_bundle = list(
 		/datum/action/cooldown/spell/noc/TAhidden_rune::name		=/datum/action/cooldown/spell/noc/TAhidden_rune,
 		/datum/action/cooldown/spell/projectile/sacred_flame::name	=/datum/action/cooldown/spell/projectile/sacred_flame,
 		/datum/action/cooldown/spell/ravox/withstand::name			=/datum/action/cooldown/spell/ravox/withstand,
