@@ -4366,6 +4366,7 @@
 #include "modular_twilight_axis\code\modules\roguetown\roguemachine\bounty.dm"
 #include "modular_twilight_axis\code\modules\roguetown\roguemachine\contract_ledger.dm"
 #include "modular_twilight_axis\code\modules\roguetown\roguemachine\hoardmaster.dm"
+#include "modular_twilight_axis\code\modules\roguetown\roguemachine\potionseller_bulk.dm"
 #include "modular_twilight_axis\code\modules\roguetown\structures\onager.dm"
 #include "modular_twilight_axis\code\modules\roguetown\structures\onager_unfinished.dm"
 #include "modular_twilight_axis\code\modules\roguetown\structures\cannon.dm"
