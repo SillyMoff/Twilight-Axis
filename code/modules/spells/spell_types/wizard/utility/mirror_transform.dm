@@ -606,7 +606,7 @@
 
 		if("Breast Size")
 			// var/list/breast_sizes = list("Flat", "Slight", "Small", "Moderate", "Large", "Generous", "Heavy", "Massive", "Heaping", "Obscene") TA EDIT
-			var/list/breast_sizes = list("Flat", "Very Small", "Small", "Normal", "Large", "Enormous", "Heavy", "Massive", "Heaping", "Obscene") // TA EDIT
+			var/list/breast_sizes = list("Flat", "Very Small", "Small", "Normal", "Large", "Enormous") // TA EDIT
 			var/new_size = input(H, "Choose your breast size", "Breast Size") as null|anything in breast_sizes
 			if(new_size)
 				var/obj/item/organ/breasts/breasts = H.getorganslot(ORGAN_SLOT_BREASTS)
