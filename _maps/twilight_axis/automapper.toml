@@ -70,3 +70,10 @@ map_files = ["drowvillage_kingtomb_1.dmm","drowvillage_kingtomb_2.dmm","drowvill
 directory = "_maps/twilight_axis/templates/dungeons/drowvillage_kingtomb/"
 required_map = "dun_world.dmm"
 coordinates = [2, 317, 1]
+
+# dunworld inquisition bookshelf passage fix
+[templates.inq_bookshelf_pass_fix]
+map_files = ["inq_bookshelf_pass_fix.dmm"]
+directory = "_maps/twilight_axis/templates/dun_world/inq_bookshelf_pass_fix/"
+required_map = "dun_world.dmm"
+coordinates = [20, 124, 2]
